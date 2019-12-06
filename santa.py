@@ -14,14 +14,14 @@ def fuel_needed(weight):
 
 
 
-def question1(filename):
+def part1(filename):
     question1_data = open(filename,"r")
     counter = 0
     for line in question1_data.read().splitlines():
         counter += original_fuel_needed(int(line))
     return counter
 
-def question2(filename):
+def part2(filename):
     question1_data = open(filename,"r")
     counter = 0
     for line in question1_data.read().splitlines():
@@ -29,4 +29,4 @@ def question2(filename):
     return counter
 
 
-print(question2("prob1_input.txt"))
+# print(question2("prob1_input.txt"))
